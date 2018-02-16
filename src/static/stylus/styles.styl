@@ -2,3 +2,133 @@
 @import 'var/var.styl';
 @import 'layout/layout.styl';
 
+.detail__inner
+    padding: 92px 0;
+
+.section__title
+    margin-bottom: 60px;
+    font: 35px / 1 openLight;
+
+.detail__item
+    display: inline-block;
+    max-width 23%;
+    padding-bottom: 63px;
+    vertical-align: top;
+    &:not(:last-child)
+        margin-right: 2.5%;
+
+.detail-item__title
+    margin-bottom: 16px;
+    font: 13px / 24px openSemiBold;
+
+.power
+    background: url( 'image/power/powerBg.png' ) no-repeat center / cover;
+
+.power__inner
+    padding: 24.5% 0 7.2% 0;
+
+.power__cont
+    max-width 520px;
+
+.power__title
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 68px;
+    color: #fff;
+
+.power__text
+    padding-right: 32px;
+    margin-bottom: 16px;
+
+.power__text 
+    color: #fff;
+
+.power__options
+    display: inline-block;
+    font-family: openBold;
+    color: #fff;
+    & > i 
+        display: inline-block;
+        margin-left: 20px;
+
+.color
+    background-color: primaryGreen;
+
+.color__inner
+    padding: 120px 0;
+
+.color__title
+    color: #fff;
+
+.color__item
+    display: inline-block;
+    max-width 31.6%;
+    padding-bottom: 41px;
+    vertical-align: top;
+    &:not(:last-child)
+        margin-right: 2.5%;
+
+.color-item__title
+    @extend .detail-item__title;
+    color: #fff;
+
+.color-item__text
+    color: #fff;
+
+.buy__inner
+    padding: 104px 0 142px 0;
+    background-color: lightGrey;
+
+.buy__prod
+    max-width 570px;
+    display: inline-block;
+    padding: 45px 72px 52px 54px;
+    &:not(:last-child)
+        margin-right: 28px;
+
+.buy__must-popular
+    background-color: #fff;
+
+.buy-prod__meta
+    display: inline-block;
+    padding: 7px 14px 8px 14px;
+    font: 11px / 1 openBold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #e1e1e1;
+    border-radius: 5px;
+
+.buy__must-popular
+    .buy-prod__meta
+        background-color: primaryMagenta;
+
+.buy-prod__title
+    margin: 15px 0;
+    font: 30px / 36px openLight;
+
+.buy-prod__desc
+    color: gentlyBlue;
+
+.buy-prod__desc
+    margin-bottom: 24px;
+
+.buy-prod__btn
+    display: inline-block;
+    padding: 12px 27px 12px 27px;
+    font: 13px / 22px openBold;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    color: #fff;
+    background-color: primaryGreen;
+    border-radius: 5px;
+
+.buy-prod__platform
+    padding: 0 4px;
+    margin-top: 20px;
+    & > i 
+        display: inline-block;
+        font-size: 24px;
+        color: primaryGrey;
+        &:not(:last-child)
+            margin-right: 12px;
+    

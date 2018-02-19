@@ -13,7 +13,8 @@ var gulp = require( 'gulp' ),
             scripts: 'src/static/scripts/*.js',
             fonts: 'src/static/fonts/**/*',
             image: 'src/static/image/**/*',
-            lib: 'src/static/lib/**/**/**/*'
+            lib: 'src/static/lib/**/**/**/*',
+            php : 'src/static/php/*.php'
         },
         build: {
             pug: 'build/',
@@ -21,7 +22,8 @@ var gulp = require( 'gulp' ),
             scripts: 'build/',
             fonts: 'build/fonts/',
             image: 'build/image/',
-            lib: 'build/lib/'
+            lib: 'build/lib/',
+            php : 'build/'
         },
         watch: {
             pug: 'src/pug/**/*.pug',
@@ -29,7 +31,8 @@ var gulp = require( 'gulp' ),
             scripts: 'src/static/scripts/*.js',
             fonts: 'src/static/fonts/**/*',
             image: 'src/static/image/**/*',
-            lib: 'src/static/lib/**/**/*'
+            lib: 'src/static/lib/**/**/*',
+            watch : 'src/static/php/*.php'
         }
     };
 
@@ -74,6 +77,11 @@ gulp.task( 'lib', function () {
                .pipe( gulp.dest( path.build.lib ) )
 });
 
+gulp.task( 'php', function () {
+    return gulp.src( path.src.php )
+               .pipe( gulp.dest( path.build.php ) )
+});
+
 gulp.task( 'watch', function () {
     gulp.watch( path.watch.pug, gulp.series( 'pug' ) )
     gulp.watch( path.watch.stylus, gulp.series( 'styl' ) )
@@ -81,7 +89,8 @@ gulp.task( 'watch', function () {
     gulp.watch( path.watch.image, gulp.series( 'img' ) )
     gulp.watch( path.watch.fonts, gulp.series( 'fonts' ) )
     gulp.watch( path.watch.lib, gulp.series( 'lib' ) )
+    gulp.watch( path.watch.php, gulp.series( 'php' ) )
 });
 
-gulp.task( 'default', gulp.parallel( gulp.series( 'pug', 'styl', 'fonts', 'img', 'scripts', 'lib' ), 'watch' ) );
+gulp.task( 'default', gulp.parallel( gulp.series( 'pug', 'styl', 'fonts', 'img', 'scripts', 'lib', 'php' ), 'watch' ) );
 

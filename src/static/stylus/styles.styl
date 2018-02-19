@@ -2,12 +2,35 @@
 @import 'var/var.styl';
 @import 'layout/layout.styl';
 
-.detail__inner
-    padding: 92px 0;
-
 .section__title
     margin-bottom: 60px;
     font: 35px / 1 openLight;
+
+.hero
+    background: url( 'image/hero/heroBg.png' ) no-repeat bottom / cover;
+
+.hero__header
+    padding: 56px 0;
+
+@import 'comp/logo.styl';
+
+.hero__main
+    padding: 24.5% 0 32.3% 0;
+
+.hero__helper
+    max-width 470px;
+
+.hero__title
+    margin-bottom: 24px;
+    font-size: 60px;
+    color: #fff;
+
+.hero__text
+    font-family: openLight;
+    color: #fff;
+
+.detail__inner
+    padding: 92px 0;
 
 .detail__item
     display: inline-block;
@@ -76,7 +99,7 @@
     color: #fff;
 
 .buy__inner
-    padding: 104px 0 142px 0;
+    padding: 104px 0 145px 0;
     background-color: lightGrey;
 
 .buy__prod
@@ -131,4 +154,6 @@
         color: primaryGrey;
         &:not(:last-child)
             margin-right: 12px;
+
+@import 'comp/footer.styl';
     

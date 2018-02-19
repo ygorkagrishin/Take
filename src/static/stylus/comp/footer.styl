@@ -1,0 +1,65 @@
+.footer
+    background-color: primaryBlue;
+
+.footer__inner
+    padding: 124px 0;
+
+.footer__row::after
+    content: '';
+    display: block;
+    clear: both;
+
+.footer__col
+    float: left;
+    width: 50%;
+    &:last-child
+        padding-left: 10%;
+
+.footer__something
+    margin-bottom: 63px;
+
+.footer-something__title
+    @extend .detail-item__title;
+    color: #fff;
+
+.footer-something__text
+    color: #fff;
+
+.footer__list
+    display: inline-block;
+    padding-bottom: 26px;
+    &:not(:last-child)
+        margin-right: 89px;
+
+.footer-list__title
+    @extend .footer-something__title;
+
+.footer__link
+    color: #fff;
+
+.footer-form__helper
+    white-space: nowrap;
+
+.footer-form__title
+    @extend .footer-something__title;
+    margin-bottom: 23px;
+
+.footer-form__input
+    width: 400px;
+    padding: 20px;
+    border none;
+
+.footer-form__submit
+    background-color: primaryGreen;
+    border: none;
+    cursor: pointer;
+    & > i 
+        padding: 20px;
+        color: #fff;
+
+.footer-form__nb
+    max-width: 350px;
+    margin-top: 14px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #57697f;

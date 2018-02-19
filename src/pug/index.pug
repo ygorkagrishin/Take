@@ -11,6 +11,22 @@ html(lang='ru')
         link(rel="stylesheet", href="lib/font-awesome-4.7.0/css/font-awesome.min.css")
     head
 body.page
+    block hero
+        section.hero.section
+            .hero__inner
+                .container
+                    .hero__header
+                        h1.logo 
+                            img(src="image/header/Shape.png", alt="logo pic")
+                            span take
+                    .hero__main
+                        .hero__helper
+                            h2.section__title.hero__title Picture perfect
+                            .hero__text
+                                p
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                                    | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
     block details
         section.detail.section
             .detail__inner
@@ -137,6 +153,62 @@ body.page
         footer.footer
             .footer__inner
                 .container
-                            
+                    .footer__row
+                        .footer__col
+                            .footer__something.footer-something
+                                h6.footer-something__title Get in touch
+                                .footer-something__text
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                                    | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    | Ut enim ad minim veniam, 
+                                    | quis nostrud exercitation ullamco laboris 
+                                    | nisi ut aliquip ex ea commodo consequat. 
+                            .footer__lists
+                                ul.footer__list.footer-list
+                                    h6.footer-list__title Resources
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link Tour
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link Customers
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link Pricing and Plans
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link New Features
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link Education
+                                ul.footer__list
+                                    h6.footer-list__title Features
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link Tour
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link Customers
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link Pricing and Plans
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link New Freatures
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link Education
+                                ul.footer__list
+                                    h6.footer-list__title How To's
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link Tour
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link Customers
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link Pricing and Plans
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link New Features
+                                    li.footer__item
+                                        a(href="javascript:void(0);").footer__link Education
+                        .footer__col
+                            form(action="").footer__form.footer-form
+                                .footer-form__helper
+                                    h6.footer-form__title Stay in touch
+                                    input.footer-form__input
+                                    button.footer-form__submit
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                .footer-form__nb
+                                    | We don’t send spam. Actually, who are we kiding, we’ll spam 
+                                    | the shit out of you’r inbox
 
 script(src='main.js')

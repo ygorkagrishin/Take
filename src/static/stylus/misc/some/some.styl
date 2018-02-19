@@ -1,0 +1,83 @@
+.some
+    overflow-x: hidden;
+
+.some__inner
+    padding-top: 109px;
+
+.some__title
+    margin-bottom: 30px;
+
+.some__text
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    p
+        margin-bottom: 24px;
+    &:last-child
+        padding-left: 14px;
+        margin-top: 98px;
+
+.some-box
+    max-width 1600px;
+    padding-top: 56px;
+    margin: 0 auto;
+
+.some-box__table
+    transform: translateX(216px);
+    transition: all .7s;
+    will-change: transform;
+    &:hover
+        transform: translateX(0);
+
+.some-box__table::after
+    content: '';
+    display: block;
+    clear: both;
+
+.some-box__cell
+    float: left;
+    padding: 46px 32px 55px 40px;
+    color: #fff;
+    &:nth-child(1)
+        background-color: primaryPeachy;
+    &:nth-child(2)
+        background-color: primaryBlue;
+    &:nth-child(3)
+        background: url( 'image/box/Layer-6.png' ) no-repeat center / cover;
+    &:nth-child(4)
+        background-color: primaryMagenta;
+    &:nth-child(5)
+        background: url( 'image/box/Layer-5.png' ) no-repeat center / cover;
+    &:nth-child(6)
+        background-color: primaryGreen;
+    &:nth-child(7)
+        background: url( 'image/box/Layer-14.png' ) no-repeat top / cover;
+
+.some-box__cell_small
+    max-width 25%;
+    @media screen and ( max-width 1024px )
+        max-width: 33.3%;
+        padding: 40px 10px 55px 10px;
+
+.some-box__cell_large
+    max-width 50%;
+    padding: 46px 270px 55px 40px;
+    .some-box__text
+        margin-bottom: 53px;
+    @media screen and ( max-width 1024px )
+        max-width: 66.7%;
+        padding: 40px 10% 55px 10px;
+
+.some-box__title
+    margin-bottom: 22px;
+    font: 30px / 1 openLight;
+    white-space: nowrap;
+
+.some-box__text
+    margin-bottom: 29px;
+
+.some-box__link
+    font: 14px / 24px openBold;
+    color: #fff;
+    & > i 
+        margin-left: 14px;

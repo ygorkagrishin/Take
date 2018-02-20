@@ -32,7 +32,7 @@ var gulp = require( 'gulp' ),
             fonts: 'src/static/fonts/**/*',
             image: 'src/static/image/**/*',
             lib: 'src/static/lib/**/**/*',
-            watch : 'src/static/php/*.php'
+            php : 'src/static/php/*.php'
         }
     };
 

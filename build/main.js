@@ -1,0 +1,2 @@
+$(document).ready(function(){var t=$("#js-form");t.submit(function(e){e.preventDefault();var a=$(this).serialize();$.ajax({type:"POST",url:"action.php",data:a,success:function(){t.trigger("reset"),alert("Ваше сообщение отпрвлено!")}})})});
+$("input, textarea").placeholder();

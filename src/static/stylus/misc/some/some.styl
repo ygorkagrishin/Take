@@ -23,11 +23,15 @@
     margin: 0 auto;
 
 .some-box__table
-    transform: translateX(216px);
+    transform: translateX(35%);
     transition: all .7s;
     will-change: transform;
-    &:hover
-        transform: translateX(0);
+    
+.some-box__table_is_active
+    transform: translateX(0); 
+
+.some-box__table_hover:hover
+    transform: translateX(0);
 
 .some-box__table::after
     content: '';

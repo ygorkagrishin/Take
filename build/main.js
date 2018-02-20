@@ -1,2 +1,3 @@
 $(document).ready(function(){var t=$("#js-form");t.submit(function(e){e.preventDefault();var a=$(this).serialize();$.ajax({type:"POST",url:"action.php",data:a,success:function(){t.trigger("reset"),alert("Ваше сообщение отпрвлено!")}})})});
+!function(){if(navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPod/i)||navigator.userAgent.match(/iPad/i)){var a=$(".some-box__table");a.click(function(){a.hasClass("some-box__table_hover");a.hasClass("some-box__table_is_active")?a.removeClass("some-box__table_is_active"):(a.removeClass("some-box__table_hover"),a.addClass("some-box__table_is_active"))})}}();
 $("input, textarea").placeholder();

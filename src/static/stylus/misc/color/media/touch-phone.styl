@@ -1,6 +1,8 @@
 .color__inner
     @media screen and ( max-width 540px )
         padding: 15% 0;
+    @media screen and ( orientation landscape ) and ( max-width 840px )
+        padding: 5% 0;
 
 .color__item
     @media screen and ( max-width 540px )
@@ -9,4 +11,11 @@
         &:not(:last-child)
             padding-bottom: 10%;
             margin: 0;
+    @media screen and ( orientation landscape ) and ( max-width 840px )
+        max-width: 100%;
+        padding: 0;
+        &:not(:last-child)
+            padding-bottom: 5%;
+            margin: 0;
+
 

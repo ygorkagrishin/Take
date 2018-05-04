@@ -15,15 +15,14 @@
     &:last-child
         padding-left: 9.7%;
 
-.footer__something
+.footer__some
     margin-bottom: 63px;
+    h6
+        margin-bottom: 16px;
+        font: 13px / 24px openSemiBold;
+        color: #fff;
 
-.footer-something__title
-    margin-bottom: 16px;
-    font: 13px / 24px openSemiBold;
-    color: #fff;
-
-.footer-something__text
+.footer__text
     color: #fff;
 
 .footer__list
@@ -31,39 +30,8 @@
     padding-bottom: 26px;
     &:not(:last-child)
         margin-right: 89px;
-
-.footer-list__title
-    @extend .footer-something__title;
+    h6
+        @extend .footer__some h6;
 
 .footer__link
     color: #fff;
-
-.footer-form__helper
-    white-space: nowrap;
-
-.footer-form__title
-    @extend .footer-something__title;
-    margin-bottom: 23px;
-
-.footer-form__input
-    width: 85%;
-    padding: 20px;
-    border none;
-
-.placeholder
-    color: #aaa;
-
-.footer-form__submit
-    padding: 20px 28px 20px 28px;
-    background-color: primaryGreen;
-    border: none;
-    cursor: pointer;
-    & > i 
-        color: #fff;
-
-.footer-form__nb
-    max-width: 350px;
-    margin-top: 14px;
-    font-size: 12px;
-    line-height: 18px;
-    color: #57697f;
